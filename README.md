@@ -1,8 +1,8 @@
 # CG.Sequences: 
 ---
-[![Build Status](https://dev.azure.com/codegator/CG.Sequences/_apis/build/status/CodeGator.CG.Sequences?branchName=master)](https://dev.azure.com/codegator/CG.Sequences/_build/latest?definitionId=39&branchName=master)
+[![Build Status](https://dev.azure.com/codegator/CG.Sequences/_apis/build/status/CodeGator.CG.Sequences?branchName=main)](https://dev.azure.com/codegator/CG.Sequences/_build/latest?definitionId=37&branchName=main)
 [![Github docs](https://img.shields.io/static/v1?label=Documentation&message=online&color=blue)](https://codegator.github.io/CG.Sequences/index.html)
-![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Sequences/39)
+![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Sequences/37)
 
 #### What does it do?
 This package contains abstractions for numeric sequences.
