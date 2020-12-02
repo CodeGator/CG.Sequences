@@ -180,6 +180,38 @@ format a numeric value into a custom string.</p>
     }
 }</code></pre>
 
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="CG_Sequences_MaskedFormatter__ctor_" data-uid="CG.Sequences.MaskedFormatter.#ctor*"></a>
+  <h4 id="CG_Sequences_MaskedFormatter__ctor_System_Boolean_" data-uid="CG.Sequences.MaskedFormatter.#ctor(System.Boolean)">MaskedFormatter(Boolean)</h4>
+  <div class="markdown level1 summary"><p>This constructor creates a new instance of the <a class="xref" href="CG.Sequences.MaskedFormatter.html">MaskedFormatter</a>
+class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MaskedFormatter(bool throwOnMaskOverflow = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">throwOnMaskOverflow</span></td>
+        <td><p>True if the formatter should throw
+an exception whenever the value exceeds the number of non-literal
+digits in the mask. Empty masks are ignored for this purpose.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   <a id="CG_Sequences_MaskedFormatter_Format_" data-uid="CG.Sequences.MaskedFormatter.Format*"></a>

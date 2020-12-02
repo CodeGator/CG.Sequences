@@ -158,7 +158,7 @@ interface.</p>
   <h6><strong>Assembly</strong>: CG.Sequences.dll</h6>
   <h5 id="CG_Sequences_Repositories_SequenceRepositoryBase_3_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class SequenceRepositoryBase&lt;TOptions, TModel, TKey&gt; : CrudRepositoryBase&lt;TOptions, TModel, TKey&gt;, ISequenceRepository&lt;TModel, TKey&gt;, ICrudRepository&lt;TModel, TKey&gt;, ILinqRepository&lt;TModel&gt;, IRepository, IDisposable where TOptions : IOptions&lt;RepositoryOptions&gt; where TModel : class, IModel&lt;TKey&gt; where TKey : new()</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class SequenceRepositoryBase&lt;TOptions, TModel, TKey&gt; : CrudRepositoryBase&lt;TOptions, TModel, TKey&gt;, ISequenceRepository&lt;TModel, TKey&gt;, ICrudRepository&lt;TModel, TKey&gt;, ILinqRepository&lt;TModel&gt;, IRepository, IDisposable where TOptions : IOptions&lt;RepositoryOptions&gt; where TModel : Sequence, IModel&lt;TKey&gt; where TKey : new()</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -212,58 +212,6 @@ class.</p>
         <td><span class="parametername">options</span></td>
         <td><p>The options to use with the repository.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <a id="CG_Sequences_Repositories_SequenceRepositoryBase_3_NextAsync_" data-uid="CG.Sequences.Repositories.SequenceRepositoryBase`3.NextAsync*"></a>
-  <h4 id="CG_Sequences_Repositories_SequenceRepositoryBase_3_NextAsync_CG_Sequences_Models_Sequence_System_Int32_System_Threading_CancellationToken_" data-uid="CG.Sequences.Repositories.SequenceRepositoryBase`3.NextAsync(CG.Sequences.Models.Sequence,System.Int32,System.Threading.CancellationToken)">NextAsync(Sequence, Int32, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract Task&lt;string[]&gt; NextAsync(Sequence sequence, int count, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CG.Sequences.Models.Sequence.html">Sequence</a></td>
-        <td><span class="parametername">sequence</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">count</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>[]&gt;</td>
-        <td></td>
       </tr>
     </tbody>
   </table>
