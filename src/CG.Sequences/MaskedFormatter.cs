@@ -125,6 +125,35 @@ namespace CG.Sequences
             'u', 'v', 'w', 'x', 'y', 'z'
         };
 
+        /// <summary>
+        /// This field indicates the formatter should throw an exception if
+        /// the formatting operation overflows the available digits, in the mask
+        /// </summary>
+        private readonly bool _throwOnMaskOverflow;
+
+        #endregion
+
+        // *******************************************************************
+        // Constructors.
+        // *******************************************************************
+
+        #region Constructors
+
+        /// <summary>
+        /// This constructor creates a new instance of the <see cref="MaskedFormatter"/>
+        /// class.
+        /// </summary>
+        /// <param name="throwOnMaskOverflow">True if the formatter should throw
+        /// an exception whenever the value exceeds the number of non-literal 
+        /// digits in the mask. Empty masks are ignored for this purpose.</param>
+        public MaskedFormatter(
+            bool throwOnMaskOverflow = false
+            )
+        {
+            // Save the values.
+            _throwOnMaskOverflow = throwOnMaskOverflow;
+        }
+
         #endregion
 
         // *******************************************************************
@@ -273,10 +302,14 @@ namespace CG.Sequences
                 // Check for numeric overflow ...
                 if (value > 0)
                 {
-                    // Panic!
-                    throw new FormatException(
-                        message: Resources.MaskedFormatter_Overflow
-                        );
+                    // Should we throw an exception?
+                    if (_throwOnMaskOverflow)
+                    {
+                        // Panic!
+                        throw new FormatException(
+                            message: Resources.MaskedFormatter_Overflow
+                            );
+                    }
                 }
 
                 // Loop and deal with any literal mask symbols.
@@ -336,11 +369,17 @@ namespace CG.Sequences
             )
         {
             if (arg is IFormattable)
+            {
                 return ((IFormattable)arg).ToString(format, CultureInfo.CurrentCulture);
+            }
             else if (arg != null)
+            {
                 return arg.ToString();
+            }
             else
+            {
                 return String.Empty;
+            }
         }
 
         #endregion

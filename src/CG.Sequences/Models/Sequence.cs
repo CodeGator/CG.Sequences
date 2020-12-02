@@ -34,6 +34,18 @@ namespace CG.Sequences.Models
         public string Mask { get; set; }
 
         /// <summary>
+        /// This property indicates whether or not the sequence should
+        /// throw an exception if the counter overflows the mask.
+        /// </summary>
+        public bool ThrowOnMaskOverflow { get; set; }
+
+        /// <summary>
+        /// This property indicates whether or not the sequence should
+        /// throw an exception if the sequence count overflows.
+        /// </summary>
+        public bool ThrowOnOverflow { get; set; }
+
+        /// <summary>
         /// This property contains the date when the sequence was created.
         /// </summary>
         public DateTime CreatedDate { get; set; }

@@ -3,8 +3,6 @@ using CG.Business.Repositories;
 using CG.Business.Repositories.Options;
 using CG.Sequences.Models;
 using Microsoft.Extensions.Options;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace CG.Sequences.Repositories
 {
@@ -17,7 +15,7 @@ namespace CG.Sequences.Repositories
     public abstract class SequenceRepositoryBase<TOptions, TModel, TKey> :
         CrudRepositoryBase<TOptions, TModel, TKey>,
         ISequenceRepository<TModel, TKey>
-        where TModel : class, IModel<TKey>
+        where TModel : Sequence, IModel<TKey>
         where TOptions : IOptions<RepositoryOptions>
         where TKey : new()
     {
@@ -38,21 +36,6 @@ namespace CG.Sequences.Repositories
         {
 
         }
-
-        #endregion
-
-        // *******************************************************************
-        // Public methods.
-        // *******************************************************************
-
-        #region Public methods
-
-        /// <inheritdoc />
-        public abstract Task<string[]> NextAsync(
-            Sequence sequence,
-            int count,
-            CancellationToken cancellationToken = default
-            );
 
         #endregion
     }

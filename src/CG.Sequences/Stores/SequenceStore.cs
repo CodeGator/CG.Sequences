@@ -1,4 +1,5 @@
-﻿using CG.Business.Stores;
+﻿using CG.Business.Models;
+using CG.Business.Stores;
 using CG.Sequences.Models;
 using CG.Sequences.Properties;
 using CG.Sequences.Repositories;
@@ -14,8 +15,13 @@ namespace CG.Sequences.Stores
     /// This interface represents an object that manages the operation of numeric
     /// sequences.
     /// </summary>
-    public class SequenceStore :
-        CrudStoreBase<Sequence, int, ISequenceRepository<Sequence, int>>
+    /// <typeparam name="TModel">The type of associated model.</typeparam>
+    /// <typeparam name="TKey">The type of key associated with the model.</typeparam>
+    public class SequenceStore<TModel, TKey> :
+        CrudStoreBase<TModel, TKey, ISequenceRepository<TModel, TKey>>,
+        ISequenceStore<TModel, TKey>
+        where TModel : Sequence, IModel<TKey>
+        where TKey : new()
     {
         // *******************************************************************
         // Constructors.
@@ -29,7 +35,7 @@ namespace CG.Sequences.Stores
         /// </summary>
         /// <param name="repository">The repository to use with the store.</param>
         public SequenceStore(
-            ISequenceRepository<Sequence, int> repository
+            ISequenceRepository<TModel, TKey> repository
             ) : base(repository)
         {
 
@@ -45,7 +51,7 @@ namespace CG.Sequences.Stores
 
         /// <inheritdoc />
         public virtual async Task<string[]> NextAsync(
-            Sequence sequence,
+            TModel sequence,
             int count,
             CancellationToken cancellationToken = default
             )
@@ -56,6 +62,15 @@ namespace CG.Sequences.Stores
 
             try
             {
+                // Should we check for overflow?
+                if (sequence.ThrowOnOverflow)
+                {
+                    // Perform the addition with checking. Note, this will throw
+                    //   an exception if the operation overflows the data type, due
+                    //   to our inclusion of the checked keyword.
+                    var temp = checked(sequence.LastValue + count);
+                }
+
                 // Initialize the counts.
                 var counts = new string[count];
                 for (var x = 0; x < count; x++)
@@ -68,7 +83,7 @@ namespace CG.Sequences.Stores
                 sequence.LastValue += count;
 
                 // Write the changes. (We call the base UpdateAsync method
-                //   here so we don't modify the meta-data for sequence
+                //   here so we don't modify the meta-data for simple sequence
                 //   increments.
                 var newSequence = await base.UpdateAsync(
                     sequence,
@@ -79,7 +94,9 @@ namespace CG.Sequences.Stores
                 if (false == string.IsNullOrEmpty(sequence.Mask))
                 {
                     // Create the custom formatter.
-                    var formatter = new MaskedFormatter();
+                    var formatter = new MaskedFormatter(
+                        sequence.ThrowOnMaskOverflow
+                        );
 
                     // Loop through the counts.
                     for (var x = 0; x < count; x++)
@@ -102,7 +119,7 @@ namespace CG.Sequences.Stores
                 throw new SequenceException(
                     message: string.Format(
                         Resources.SequenceStore_NextAsync,
-                        nameof(SequenceStore),
+                        nameof(SequenceStore<TModel, TKey>),
                         count,
                         JsonSerializer.Serialize(sequence)
                         ),
@@ -114,8 +131,8 @@ namespace CG.Sequences.Stores
         // *******************************************************************
 
         /// <inheritdoc />
-        public virtual async Task<Sequence> ResetAsync(
-            Sequence sequence,
+        public virtual async Task<TModel> ResetAsync(
+            TModel sequence,
             CancellationToken cancellationToken = default
             )
         {
@@ -134,7 +151,7 @@ namespace CG.Sequences.Stores
                     ).ConfigureAwait(false);
 
                 // Return the updated sequence.
-                return newSequence;
+                return newSequence as TModel;
             }
             catch (Exception ex)
             {
@@ -142,7 +159,7 @@ namespace CG.Sequences.Stores
                 throw new SequenceException(
                     message: string.Format(
                         Resources.SequenceStore_ResetAsync,
-                        nameof(SequenceStore),
+                        nameof(SequenceStore<TModel, TKey>),
                         JsonSerializer.Serialize(sequence)
                         ),
                     innerException: ex
@@ -153,8 +170,8 @@ namespace CG.Sequences.Stores
         // *******************************************************************
 
         /// <inheritdoc />
-        public override Task<Sequence> AddAsync(
-            Sequence sequence, 
+        public override Task<TModel> AddAsync(
+            TModel sequence, 
             CancellationToken cancellationToken = default
             )
         {
@@ -174,8 +191,8 @@ namespace CG.Sequences.Stores
         // *******************************************************************
 
         /// <inheritdoc />
-        public override Task<Sequence> UpdateAsync(
-            Sequence sequence, 
+        public override Task<TModel> UpdateAsync(
+            TModel sequence, 
             CancellationToken cancellationToken = default
             )
         {
