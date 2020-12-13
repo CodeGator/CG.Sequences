@@ -4,6 +4,7 @@
 [![Github docs](https://img.shields.io/static/v1?label=Documentation&message=online&color=blue)](https://codegator.github.io/CG.Sequences/index.html)
 [![NuGet downloads](https://img.shields.io/nuget/dt/CG.Sequences.svg?style=flat)](https://nuget.org/packages/CG.Sequences)
 ![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Sequences/37)
+[![Github discussion](https://img.shields.io/badge/Discussion-online-blue)](https://github.com/CodeGator/CG.Sequences/discussions)
 
 #### What does it do?
 This package contains abstractions for numeric sequences.
