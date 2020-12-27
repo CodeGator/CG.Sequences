@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <UserSecretsId>6dfbf344-bc89-4878-aa64-3440a8b6141d</UserSecretsId>
-    <Copyright>Copyright © 2008 - 2020 by CodeGator. All rights reserved.</Copyright>
+    <Copyright>Copyright © 2008 - 2021 by CodeGator. All rights reserved.</Copyright>
     <Description>This package contains abstractions for numeric sequences. 
 
 Platforms supported:
-    .NET Standard 2.0 or above</Description>
+    .NET Core 3.1 or above</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/CodeGator/CG.Sequences</PackageProjectUrl>
     <RepositoryUrl>https://github.com/CodeGator/CG.Sequences</RepositoryUrl>
@@ -18,6 +18,10 @@ Platforms supported:
     <Authors>Martin Cook</Authors>
     <Company>CodeGator</Company>
     <PackageIcon>packageDefaultIcon-50x50.png</PackageIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp3.1\CG.Sequences.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -49,5 +53,9 @@ Platforms supported:
       <PackagePath></PackagePath>
     </None>
   </ItemGroup>
+	
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
 
 </Project>

@@ -1,0 +1,396 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CG.Sequences</name>
+    </assembly>
+    <members>
+        <member name="T:CG.Sequences.IMaskedFormatter">
+            <summary>
+            This interface represents a custom formatter object that uses a 
+            mask to specify how to convert a value to a string.
+            </summary>
+        </member>
+        <member name="T:CG.Sequences.MaskedFormatter">
+            <summary>
+            This class is an implementation of <see cref="T:CG.Sequences.IMaskedFormatter"/> that 
+            formats a given value using a mask comprised of literal and token symbols. 
+            Each token in the mask is used to format the number, according to the
+            rules for that token. Literal symbols are copied verbatum to the output.
+            Token symbols can also be escaped by leading the symbol with a '\'.
+            </summary>
+            <remarks>
+            The mask may contain any combination of tokens and literals, to any
+            length desired. If the value cannot be expressed with a given mask then
+            a <see cref="T:System.FormatException"/> exception is thrown. So, make sure the
+            mask you use have enough tokens in it to handle the range of values
+            you'll be trying to format. 
+            <para />
+            The mask part of the format string MUST start and end with the '$' symbol 
+            and may contain the following conversion tokens: 
+            <list type="bullet">
+            <listheader>  
+            <term>Token</term>  
+            <description>Description</description>  
+            </listheader>  
+            <item>  
+            <term>'D'</term>  
+            <description>This token denotes a decimal placeholder, which means this
+            digit will be formatted as a decimal number (0 through 9).</description>  
+            </item>  
+            <item>  
+            <term>'B'</term>  
+            <description>This token denotes a binary placeholder, which means this
+            digit will be formatted as a binary number (0 through 1).</description>  
+            </item>  
+            <item>  
+            <term>'O'</term>  
+            <description>This token denotes an octal placeholder, which means this
+            digit will be formatted as a octal number (0 through 7).</description>  
+            </item>
+            <item>  
+            <term>'H'</term>  
+            <description>This token denotes a hex placeholder, which means this
+            digit will be formatted as a hex number (0 through F).</description>  
+            </item>
+            <item>  
+            <term>'Z'</term>  
+            <description>This token denotes a base36 placeholder, which means this
+            digit will be formatted as a printable character (0 through 9, a through Z).
+            </description>  
+            </item>
+            </list>
+            <para />
+            Literal symbols may be any legal .NET character but token symbols used as
+            a literal MUST be escaped with a leading '\' character.
+            </remarks>
+            <example>
+            This example shows how to use the <see cref="T:CG.Sequences.MaskedFormatter"/> class to 
+            format a numeric value into a custom string.
+            <code>
+            class TestClass
+            {
+                static void Main()
+                {
+                    var result = String.Format(new MaskedFormatter(), "{0:$HHHH$}", 101);
+                    Console.WriteLine(result);
+                    // Outputs the value: 0065
+                    // (hex conversion with no literals)
+                    
+                    result = String.Format(new MaskedFormatter(), "{0:$OOOO$}", 101);
+                    Console.WriteLine(result);
+                    // Outputs the value: 0145
+                    // (octal conversion with no literals)
+                    
+                    result = String.Format(new MaskedFormatter(), "{0:$HBOD$}", 201);
+                    Console.WriteLine(result);
+                    // Outputs the value: 1041
+                    // (mixed base conversion with no literals)
+                    
+                    result = String.Format(new MaskedFormatter(), "{0:$H_B-O%D=$}", 201);
+                    Console.WriteLine(result);
+                    // Outputs the value: 1_0-4%1=
+                    // (mixed base conversion with embedded literals)
+                }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="F:CG.Sequences.MaskedFormatter.TOKENS">
+            <summary>
+            This field contains the list of valid mask tokens.
+            </summary>
+        </member>
+        <member name="F:CG.Sequences.MaskedFormatter.BASE36SYMBOLS">
+            <summary>
+            This field contains the list of base36 replacement symbols
+            </summary>
+        </member>
+        <member name="F:CG.Sequences.MaskedFormatter._throwOnMaskOverflow">
+            <summary>
+            This field indicates the formatter should throw an exception if
+            the formatting operation overflows the available digits, in the mask
+            </summary>
+        </member>
+        <member name="M:CG.Sequences.MaskedFormatter.#ctor(System.Boolean)">
+            <summary>
+            This constructor creates a new instance of the <see cref="T:CG.Sequences.MaskedFormatter"/>
+            class.
+            </summary>
+            <param name="throwOnMaskOverflow">True if the formatter should throw
+            an exception whenever the value exceeds the number of non-literal 
+            digits in the mask. Empty masks are ignored for this purpose.</param>
+        </member>
+        <member name="M:CG.Sequences.MaskedFormatter.GetFormat(System.Type)">
+            <summary>
+            This method returns an object that provides formatting services for 
+            the specified type.
+            </summary>
+            <param name="formatType">An object that specifies the type of format 
+            object to return.</param>
+            <returns>An instance of the object specified by formatType, if the 
+            <see cref="T:System.IFormatProvider"/> implementation can supply that 
+            type of object; otherwise, null.</returns>
+        </member>
+        <member name="M:CG.Sequences.MaskedFormatter.Format(System.String,System.Object,System.IFormatProvider)">
+            <summary>
+            This method converts the value of a specified object to an equivalent 
+            string representation using specified format and culture-specific 
+            formatting information.
+            </summary>
+            <param name="format">A format string containing formatting specifications.</param>
+            <param name="arg">An object to format.</param>
+            <param name="formatProvider">An object that supplies format information 
+            about the current instance.</param>
+            <returns>The string representation of the value of arg, formatted 
+            as specified by format and formatProvider.</returns>
+        </member>
+        <member name="M:CG.Sequences.MaskedFormatter.HandleDefaultFormat(System.String,System.Object)">
+            <summary>
+            This method returns a default format for the specified format and
+            argument.
+            </summary>
+            <param name="format">The format to use for the oeration.</param>
+            <param name="arg">The argument to be formatted.</param>
+            <returns>A string representation of the formatted argument.</returns>
+        </member>
+        <member name="T:CG.Sequences.Models.Sequence">
+            <summary>
+            This class represents a numeric sequence.
+            </summary>
+        </member>
+        <member name="P:CG.Sequences.Models.Sequence.Title">
+            <summary>
+            This property contains the name of the sequence.
+            </summary>
+        </member>
+        <member name="P:CG.Sequences.Models.Sequence.LastValue">
+            <summary>
+            This property contains the last known value of the sequence.
+            </summary>
+        </member>
+        <member name="P:CG.Sequences.Models.Sequence.Mask">
+            <summary>
+            This property contains a mask, for formatting the count values
+            from the sequence.
+            </summary>
+        </member>
+        <member name="P:CG.Sequences.Models.Sequence.ThrowOnMaskOverflow">
+            <summary>
+            This property indicates whether or not the sequence should
+            throw an exception if the counter overflows the mask.
+            </summary>
+        </member>
+        <member name="P:CG.Sequences.Models.Sequence.ThrowOnOverflow">
+            <summary>
+            This property indicates whether or not the sequence should
+            throw an exception if the sequence count overflows.
+            </summary>
+        </member>
+        <member name="P:CG.Sequences.Models.Sequence.CreatedDate">
+            <summary>
+            This property contains the date when the sequence was created.
+            </summary>
+        </member>
+        <member name="P:CG.Sequences.Models.Sequence.CreatedBy">
+            <summary>
+            This property contains the name of the person who created the 
+            sequence.
+            </summary>
+        </member>
+        <member name="P:CG.Sequences.Models.Sequence.UpdatedDate">
+            <summary>
+            This property contains the date when the sequence was last 
+            updated.
+            </summary>
+        </member>
+        <member name="P:CG.Sequences.Models.Sequence.UpdatedBy">
+            <summary>
+            This property contains the name of the person who last updated
+            the sequence.
+            </summary>
+        </member>
+        <member name="T:CG.Sequences.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:CG.Sequences.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:CG.Sequences.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:CG.Sequences.Properties.Resources.MaskedFormatter_InvalidFormat">
+            <summary>
+              Looks up a localized string similar to The format of &apos;{0}&apos; is invalid..
+            </summary>
+        </member>
+        <member name="P:CG.Sequences.Properties.Resources.MaskedFormatter_Overflow">
+            <summary>
+              Looks up a localized string similar to The mask didn&apos;t contain enough symbols to hold the entire value!.
+            </summary>
+        </member>
+        <member name="P:CG.Sequences.Properties.Resources.SequenceStore_NextAsync">
+            <summary>
+              Looks up a localized string similar to {0} failed to generate &apos;{1}&apos; counts for sequence: &apos;{2}&apos;  See inner exception(s) for more detail..
+            </summary>
+        </member>
+        <member name="P:CG.Sequences.Properties.Resources.SequenceStore_ResetAsync">
+            <summary>
+              Looks up a localized string similar to {0} failed to reset sequence: &apos;{1}&apos;  See inner exception(s) for more detail..
+            </summary>
+        </member>
+        <member name="T:CG.Sequences.Repositories.ISequenceRepository`2">
+            <summary>
+            This interface represents an object for reading and writing
+            numeric sequences.
+            </summary>
+            <typeparam name="TModel">The model type associated with the repository.</typeparam>
+            <typeparam name="TKey">The key type associated with the model.</typeparam>
+        </member>
+        <member name="T:CG.Sequences.Repositories.SequenceRepositoryBase`3">
+            <summary>
+            This class is a default implementation of the <see cref="T:CG.Sequences.Repositories.ISequenceRepository`2"/> 
+            interface.
+            </summary>
+            <typeparam name="TModel">The model type associated with the repository.</typeparam>
+            <typeparam name="TKey">The key type associated with the model.</typeparam>
+        </member>
+        <member name="M:CG.Sequences.Repositories.SequenceRepositoryBase`3.#ctor(`0)">
+            <summary>
+            This constructor creates a new instance of the <see cref="T:CG.Sequences.Repositories.SequenceRepositoryBase`3"/>
+            class.
+            </summary>
+            <param name="options">The options to use with the repository.</param>
+        </member>
+        <member name="T:CG.Sequences.SequenceException">
+            <summary>
+            This class represents a sequence related exception.
+            </summary>
+        </member>
+        <member name="M:CG.Sequences.SequenceException.#ctor">
+            <summary>
+            This constructor creates a new instance of the <see cref="T:CG.Sequences.SequenceException"/>
+            class.
+            </summary>
+        </member>
+        <member name="M:CG.Sequences.SequenceException.#ctor(System.String,System.Exception)">
+            <summary>
+            This constructor creates a new instance of the <see cref="T:CG.Sequences.SequenceException"/>
+            class.
+            </summary>
+            <param name="message">The message to use for the exception.</param>
+            <param name="innerException">An optional inner exception reference.</param>
+        </member>
+        <member name="M:CG.Sequences.SequenceException.#ctor(System.String)">
+            <summary>
+            This constructor creates a new instance of the <see cref="T:CG.Sequences.SequenceException"/>
+            class.
+            </summary>
+            <param name="message">The message to use for the exception.</param>
+        </member>
+        <member name="M:CG.Sequences.SequenceException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            This constructor creates a new instance of the <see cref="T:CG.Sequences.SequenceException"/>
+            class.
+            </summary>
+            <param name="info">The serialization info to use for the exception.</param>
+            <param name="context">The streaming context to use for the exception.</param>
+        </member>
+        <member name="T:CG.Sequences.ServiceCollectionExtensions">
+            <summary>
+            This class contains extension methods related to the <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/>
+            type.
+            </summary>
+        </member>
+        <member name="M:CG.Sequences.ServiceCollectionExtensions.AddSequenceStores(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            This method registers the stores required to support numeric 
+            sequences.
+            </summary>
+            <param name="serviceCollection">The service collection to use for
+            the operation.</param>
+            <param name="configuration">The configuration to use for the 
+            operation.</param>
+            <returns>The value of the <paramref name="serviceCollection"/>
+            parameter, for chaining method calls together.</returns>
+        </member>
+        <member name="M:CG.Sequences.ServiceCollectionExtensions.AddSequenceStores``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            This method registers the stores required to support numeric 
+            sequences.
+            </summary>
+            <param name="serviceCollection">The service collection to use for
+            the operation.</param>
+            <param name="configuration">The configuration to use for the 
+            operation.</param>
+            <returns>The value of the <paramref name="serviceCollection"/>
+            parameter, for chaining method calls together.</returns>
+        </member>
+        <member name="T:CG.Sequences.Stores.ISequenceStore`2">
+            <summary>
+            This interface represents an object that manages the generation  of numeric
+            sequences.
+            </summary>
+            <typeparam name="TModel">The type of associated model.</typeparam>
+            <typeparam name="TKey">The type of key associated with the model.</typeparam>
+        </member>
+        <member name="M:CG.Sequences.Stores.ISequenceStore`2.NextAsync(`0,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            This method generates an array of counts for the specified <typeparamref name="TModel"/>
+            object.
+            </summary>
+            <param name="sequence">The sequence to use for the operation.</param>
+            <param name="count">The number of counts to generate.</param>
+            <param name="cancellationToken">A cancellation token.</param>
+            <returns>A task that returns an array of formatted counts.</returns>
+        </member>
+        <member name="M:CG.Sequences.Stores.ISequenceStore`2.ResetAsync(`0,System.Threading.CancellationToken)">
+            <summary>
+            This method resets the value of the specified <typeparamref name="TModel"/>
+            object.
+            </summary>
+            <param name="sequence">The sequence to use for the operation.</param>
+            <param name="cancellationToken">A cancellation token.</param>
+            <returns>A task that returns the newly updated <typeparamref name="TModel"/>
+            object.</returns>
+        </member>
+        <member name="T:CG.Sequences.Stores.Options.SequenceStoreOptions">
+            <summary>
+            This class contains configuration settings for a sequence store.
+            </summary>
+        </member>
+        <member name="T:CG.Sequences.Stores.SequenceStore`2">
+            <summary>
+            This interface represents an object that manages the operation of numeric
+            sequences.
+            </summary>
+            <typeparam name="TModel">The type of associated model.</typeparam>
+            <typeparam name="TKey">The type of key associated with the model.</typeparam>
+        </member>
+        <member name="M:CG.Sequences.Stores.SequenceStore`2.#ctor(CG.Sequences.Repositories.ISequenceRepository{`0,`1})">
+            <summary>
+            This constructor creates a new instance of the <see cref="!:SequenceStore"/>
+            class.
+            </summary>
+            <param name="repository">The repository to use with the store.</param>
+        </member>
+        <member name="M:CG.Sequences.Stores.SequenceStore`2.NextAsync(`0,System.Int32,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:CG.Sequences.Stores.SequenceStore`2.ResetAsync(`0,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:CG.Sequences.Stores.SequenceStore`2.AddAsync(`0,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:CG.Sequences.Stores.SequenceStore`2.UpdateAsync(`0,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
