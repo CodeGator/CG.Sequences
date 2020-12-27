@@ -20,7 +20,7 @@ This package contains abstractions for numeric sequences.
 * CG.Sequences.Repositories.SequenceRepositoryBase
 
 #### What platform(s) does it support?
-* .NET Standard 2.0 or higher.
+* .NET Core 3.1 or higher.
 
 #### How do I contact you?
 If you've spotted a bug in the code please use the project Issues [HERE](https://github.com/CodeGator/CG.Sequences/issues)
