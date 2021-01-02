@@ -271,12 +271,12 @@ references:
   commentId: T:CG.Sequences.ServiceCollectionExtensions
   fullName: CG.Sequences.ServiceCollectionExtensions
   nameWithType: ServiceCollectionExtensions
-- uid: CG.Sequences.ServiceCollectionExtensions.AddSequenceStores(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
-  name: AddSequenceStores(IServiceCollection, IConfiguration)
-  href: api/CG.Sequences.ServiceCollectionExtensions.html#CG_Sequences_ServiceCollectionExtensions_AddSequenceStores_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_
-  commentId: M:CG.Sequences.ServiceCollectionExtensions.AddSequenceStores(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
-  fullName: CG.Sequences.ServiceCollectionExtensions.AddSequenceStores(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)
-  nameWithType: ServiceCollectionExtensions.AddSequenceStores(IServiceCollection, IConfiguration)
+- uid: CG.Sequences.ServiceCollectionExtensions.AddSequenceStores(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  name: AddSequenceStores(IServiceCollection, IConfiguration, ServiceLifetime)
+  href: api/CG.Sequences.ServiceCollectionExtensions.html#CG_Sequences_ServiceCollectionExtensions_AddSequenceStores_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_DependencyInjection_ServiceLifetime_
+  commentId: M:CG.Sequences.ServiceCollectionExtensions.AddSequenceStores(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  fullName: CG.Sequences.ServiceCollectionExtensions.AddSequenceStores(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  nameWithType: ServiceCollectionExtensions.AddSequenceStores(IServiceCollection, IConfiguration, ServiceLifetime)
 - uid: CG.Sequences.ServiceCollectionExtensions.AddSequenceStores*
   name: AddSequenceStores
   href: api/CG.Sequences.ServiceCollectionExtensions.html#CG_Sequences_ServiceCollectionExtensions_AddSequenceStores_
