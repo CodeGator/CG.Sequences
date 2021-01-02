@@ -31,11 +31,13 @@ namespace CG.Sequences
         /// the operation.</param>
         /// <param name="configuration">The configuration to use for the 
         /// operation.</param>
+        /// <param name="serviceLifetime">The service lifetime to use for the operation.</param>
         /// <returns>The value of the <paramref name="serviceCollection"/>
         /// parameter, for chaining method calls together.</returns>
         public static IServiceCollection AddSequenceStores(
             this IServiceCollection serviceCollection,
-            IConfiguration configuration
+            IConfiguration configuration,
+            ServiceLifetime serviceLifetime = ServiceLifetime.Scoped
             )
         {
             // Validate the parameters before attempting to use them.
@@ -43,7 +45,24 @@ namespace CG.Sequences
                 .ThrowIfNull(configuration, nameof(configuration));
 
             // Register the stores.
-            serviceCollection.TryAddScoped<ISequenceStore<Sequence, int>, SequenceStore<Sequence,int>>();
+            switch(serviceLifetime)
+            {
+                case ServiceLifetime.Scoped:
+                    serviceCollection.TryAddScoped<ISequenceStore<Sequence, int>, SequenceStore<Sequence, int>>();
+                    break;
+                case ServiceLifetime.Singleton:
+                    serviceCollection.TryAddSingleton<ISequenceStore<Sequence, int>, SequenceStore<Sequence, int>>();
+                    break;
+                case ServiceLifetime.Transient:
+                    serviceCollection.TryAddTransient<ISequenceStore<Sequence, int>, SequenceStore<Sequence, int>>();
+                    break;
+            }
+
+            // Register the strategy(s).
+            serviceCollection.AddStrategies(
+                configuration,
+                serviceLifetime
+                );
 
             // Return the service collection.
             return serviceCollection;
