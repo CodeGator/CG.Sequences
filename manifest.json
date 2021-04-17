@@ -110,11 +110,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Sequences.ServiceCollectionExtensions.yml",
+      "source_relative_path": "api/CG.Sequences.SequenceServiceCollectionExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CG.Sequences.ServiceCollectionExtensions.html",
-          "hash": "qZOL2QPBcS3cm+cIEP1Y6ALex1wiXYIASRjDRBhabDI="
+          "relative_path": "api/CG.Sequences.SequenceServiceCollectionExtensions.html",
+          "hash": "l6eW30yigAsOfOGviUYJTOGaGaupp8ZAbvuKiT1BG0s="
         }
       },
       "is_incremental": false,
@@ -186,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Sequences.html",
-          "hash": "XaVXs/bUR6FHwv98/DbvDo/o3Uhrr24S8jMqgyi8IEc="
+          "hash": "PmQgXyYarm/Qo7/8A3L4A1kxKU4BuR0AJyD+srUfAaE="
         }
       },
       "is_incremental": false,
@@ -198,7 +198,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "EUhyKbUZ+SR05k9m0LLSh6jgopKiFp28VW48BneEtmY="
+          "hash": "05EG9Q9LusDCd/dNbsYhtyBfs0hwaeGmsnLZ5ZuGLPM="
         }
       },
       "is_incremental": false,

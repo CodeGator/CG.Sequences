@@ -265,34 +265,34 @@ references:
   isSpec: "True"
   fullName: CG.Sequences.SequenceException.SequenceException
   nameWithType: SequenceException.SequenceException
-- uid: CG.Sequences.ServiceCollectionExtensions
-  name: ServiceCollectionExtensions
-  href: api/CG.Sequences.ServiceCollectionExtensions.html
-  commentId: T:CG.Sequences.ServiceCollectionExtensions
-  fullName: CG.Sequences.ServiceCollectionExtensions
-  nameWithType: ServiceCollectionExtensions
-- uid: CG.Sequences.ServiceCollectionExtensions.AddSequenceStores(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+- uid: CG.Sequences.SequenceServiceCollectionExtensions
+  name: SequenceServiceCollectionExtensions
+  href: api/CG.Sequences.SequenceServiceCollectionExtensions.html
+  commentId: T:CG.Sequences.SequenceServiceCollectionExtensions
+  fullName: CG.Sequences.SequenceServiceCollectionExtensions
+  nameWithType: SequenceServiceCollectionExtensions
+- uid: CG.Sequences.SequenceServiceCollectionExtensions.AddSequenceStores(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime)
   name: AddSequenceStores(IServiceCollection, IConfiguration, ServiceLifetime)
-  href: api/CG.Sequences.ServiceCollectionExtensions.html#CG_Sequences_ServiceCollectionExtensions_AddSequenceStores_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_DependencyInjection_ServiceLifetime_
-  commentId: M:CG.Sequences.ServiceCollectionExtensions.AddSequenceStores(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime)
-  fullName: CG.Sequences.ServiceCollectionExtensions.AddSequenceStores(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.ServiceLifetime)
-  nameWithType: ServiceCollectionExtensions.AddSequenceStores(IServiceCollection, IConfiguration, ServiceLifetime)
-- uid: CG.Sequences.ServiceCollectionExtensions.AddSequenceStores*
+  href: api/CG.Sequences.SequenceServiceCollectionExtensions.html#CG_Sequences_SequenceServiceCollectionExtensions_AddSequenceStores_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_DependencyInjection_ServiceLifetime_
+  commentId: M:CG.Sequences.SequenceServiceCollectionExtensions.AddSequenceStores(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  fullName: CG.Sequences.SequenceServiceCollectionExtensions.AddSequenceStores(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  nameWithType: SequenceServiceCollectionExtensions.AddSequenceStores(IServiceCollection, IConfiguration, ServiceLifetime)
+- uid: CG.Sequences.SequenceServiceCollectionExtensions.AddSequenceStores*
   name: AddSequenceStores
-  href: api/CG.Sequences.ServiceCollectionExtensions.html#CG_Sequences_ServiceCollectionExtensions_AddSequenceStores_
-  commentId: Overload:CG.Sequences.ServiceCollectionExtensions.AddSequenceStores
+  href: api/CG.Sequences.SequenceServiceCollectionExtensions.html#CG_Sequences_SequenceServiceCollectionExtensions_AddSequenceStores_
+  commentId: Overload:CG.Sequences.SequenceServiceCollectionExtensions.AddSequenceStores
   isSpec: "True"
-  fullName: CG.Sequences.ServiceCollectionExtensions.AddSequenceStores
-  nameWithType: ServiceCollectionExtensions.AddSequenceStores
-- uid: CG.Sequences.ServiceCollectionExtensions.AddSequenceStores``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  fullName: CG.Sequences.SequenceServiceCollectionExtensions.AddSequenceStores
+  nameWithType: SequenceServiceCollectionExtensions.AddSequenceStores
+- uid: CG.Sequences.SequenceServiceCollectionExtensions.AddSequenceStores``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
   name: AddSequenceStores<TModel, TKey>(IServiceCollection, IConfiguration)
-  href: api/CG.Sequences.ServiceCollectionExtensions.html#CG_Sequences_ServiceCollectionExtensions_AddSequenceStores__2_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_
-  commentId: M:CG.Sequences.ServiceCollectionExtensions.AddSequenceStores``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  href: api/CG.Sequences.SequenceServiceCollectionExtensions.html#CG_Sequences_SequenceServiceCollectionExtensions_AddSequenceStores__2_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_
+  commentId: M:CG.Sequences.SequenceServiceCollectionExtensions.AddSequenceStores``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
   name.vb: AddSequenceStores(Of TModel, TKey)(IServiceCollection, IConfiguration)
-  fullName: CG.Sequences.ServiceCollectionExtensions.AddSequenceStores<TModel, TKey>(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)
-  fullName.vb: CG.Sequences.ServiceCollectionExtensions.AddSequenceStores(Of TModel, TKey)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)
-  nameWithType: ServiceCollectionExtensions.AddSequenceStores<TModel, TKey>(IServiceCollection, IConfiguration)
-  nameWithType.vb: ServiceCollectionExtensions.AddSequenceStores(Of TModel, TKey)(IServiceCollection, IConfiguration)
+  fullName: CG.Sequences.SequenceServiceCollectionExtensions.AddSequenceStores<TModel, TKey>(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)
+  fullName.vb: CG.Sequences.SequenceServiceCollectionExtensions.AddSequenceStores(Of TModel, TKey)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)
+  nameWithType: SequenceServiceCollectionExtensions.AddSequenceStores<TModel, TKey>(IServiceCollection, IConfiguration)
+  nameWithType.vb: SequenceServiceCollectionExtensions.AddSequenceStores(Of TModel, TKey)(IServiceCollection, IConfiguration)
 - uid: CG.Sequences.Stores
   name: CG.Sequences.Stores
   href: api/CG.Sequences.Stores.html
