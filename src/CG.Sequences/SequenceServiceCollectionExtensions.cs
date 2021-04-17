@@ -6,16 +6,14 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CG.Sequences
 {
     /// <summary>
     /// This class contains extension methods related to the <see cref="IServiceCollection"/>
-    /// type.
+    /// type, for registering types related to sequences.
     /// </summary>
-    public static partial class ServiceCollectionExtensions
+    public static partial class SequenceServiceCollectionExtensions
     {
         // *******************************************************************
         // Public methods.
