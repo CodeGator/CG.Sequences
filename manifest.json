@@ -13,204 +13,12 @@
       "is_incremental": false
     },
     {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Sequences.IMaskedFormatter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Sequences.IMaskedFormatter.html",
-          "hash": "cao2uJ9FfM4zInqw3m2WDdiJWjIUxfxilo12FfsvaFY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Sequences.MaskedFormatter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Sequences.MaskedFormatter.html",
-          "hash": "YACYO4eP0dqvF2CD0GFqM9oPSMGtPXj7jtkIM96KIYo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Sequences.Models.Sequence.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Sequences.Models.Sequence.html",
-          "hash": "5R070nWZqTVy1TmWCHBIB+rHUDpE3e/uBQ2Vnd1wwE4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Sequences.Models.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Sequences.Models.html",
-          "hash": "mwpC7xKnRICBj7cRkYikNyl7qoKqQjtzNtyzWChL0NA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Sequences.Repositories.ISequenceRepository-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Sequences.Repositories.ISequenceRepository-2.html",
-          "hash": "XBpmvNW8iuXg/rJhMDUkDgk5zz1jOSAUZNG6MH9nHzQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Sequences.Repositories.SequenceRepositoryBase-3.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Sequences.Repositories.SequenceRepositoryBase-3.html",
-          "hash": "4VGo1f2LdAStGq7mqGuwVDnfMDrcsm5wrMgjgyD2SMQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Sequences.Repositories.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Sequences.Repositories.html",
-          "hash": "gb5mcFzD99xXD8qVMrk6ddLiABYRO/C6MDxyUtGIwTo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Sequences.SequenceException.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Sequences.SequenceException.html",
-          "hash": "RicRQ51Zt3ZJ0QpfIHt0mQlagQJumhKlga8yswv/D7M="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Sequences.SequenceServiceCollectionExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Sequences.SequenceServiceCollectionExtensions.html",
-          "hash": "l6eW30yigAsOfOGviUYJTOGaGaupp8ZAbvuKiT1BG0s="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Sequences.Stores.ISequenceStore-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Sequences.Stores.ISequenceStore-2.html",
-          "hash": "ltA/ZG1KqL8rXnTXUqyEneRHTpUyq0tX34DOnE7wl4Y="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Sequences.Stores.Options.SequenceStoreOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Sequences.Stores.Options.SequenceStoreOptions.html",
-          "hash": "O/XkJAHsT1ZJQ+ycJQxZj9CMVl5IowFxT1RXLSNxe9A="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Sequences.Stores.Options.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Sequences.Stores.Options.html",
-          "hash": "QSTI1vlQNejejouQkRND1Yf74W/jvhvr5li/8oqHyM8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Sequences.Stores.SequenceStore-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Sequences.Stores.SequenceStore-2.html",
-          "hash": "GvXwchN6NacWyrRvMHhxaggsOVKq81aS09vmnCuEqls="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Sequences.Stores.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Sequences.Stores.html",
-          "hash": "RjN5f7rgc9XPJsf3E4AMNw1GO3BZasG/WofOXnfr2Sk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Sequences.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Sequences.html",
-          "hash": "PmQgXyYarm/Qo7/8A3L4A1kxKU4BuR0AJyD+srUfAaE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "api/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "05EG9Q9LusDCd/dNbsYhtyBfs0hwaeGmsnLZ5ZuGLPM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "articles/intro.md",
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "gcp1JB3/cLklcT+72krfnba+6CuoFkaQtheZ9cEBdjQ="
+          "hash": "OgOIdp+68sKjWkO8X7/eMKamv9SPvmhi1lIB7IfCk/4="
         }
       },
       "is_incremental": false,
@@ -278,7 +86,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "2S4ZhO2vEN5H5RObxirKUZkyCQPvmv4UyoxPlf2rPSY="
+          "hash": "XaIKeu4c9TF9ZisOFZ2UmbnElYD7WjSzr+tYZXx4tYI="
         }
       },
       "is_incremental": false,
@@ -290,7 +98,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "WV/nCAg8bBjhuLJMg61tQPQQPzIzl/nO+d5FoBYqaf8="
+          "hash": "Wgth5tv5MRvoJ9x80iHxXBxW7o6NCITCGNQLzqAbxpI="
         }
       },
       "is_incremental": false,
@@ -312,12 +120,6 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 2,
-          "skipped_file_count": 0
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 15,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
