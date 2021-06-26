@@ -1,3 +1,451 @@
 ### YamlMime:XRefMap
 sorted: true
-references: []
+references:
+- uid: CG.Sequences
+  name: CG.Sequences
+  href: api/CG.Sequences.html
+  commentId: N:CG.Sequences
+  fullName: CG.Sequences
+  nameWithType: CG.Sequences
+- uid: CG.Sequences.IMaskedFormatter
+  name: IMaskedFormatter
+  href: api/CG.Sequences.IMaskedFormatter.html
+  commentId: T:CG.Sequences.IMaskedFormatter
+  fullName: CG.Sequences.IMaskedFormatter
+  nameWithType: IMaskedFormatter
+- uid: CG.Sequences.MaskedFormatter
+  name: MaskedFormatter
+  href: api/CG.Sequences.MaskedFormatter.html
+  commentId: T:CG.Sequences.MaskedFormatter
+  fullName: CG.Sequences.MaskedFormatter
+  nameWithType: MaskedFormatter
+- uid: CG.Sequences.MaskedFormatter.#ctor(System.Boolean)
+  name: MaskedFormatter(Boolean)
+  href: api/CG.Sequences.MaskedFormatter.html#CG_Sequences_MaskedFormatter__ctor_System_Boolean_
+  commentId: M:CG.Sequences.MaskedFormatter.#ctor(System.Boolean)
+  fullName: CG.Sequences.MaskedFormatter.MaskedFormatter(System.Boolean)
+  nameWithType: MaskedFormatter.MaskedFormatter(Boolean)
+- uid: CG.Sequences.MaskedFormatter.#ctor*
+  name: MaskedFormatter
+  href: api/CG.Sequences.MaskedFormatter.html#CG_Sequences_MaskedFormatter__ctor_
+  commentId: Overload:CG.Sequences.MaskedFormatter.#ctor
+  isSpec: "True"
+  fullName: CG.Sequences.MaskedFormatter.MaskedFormatter
+  nameWithType: MaskedFormatter.MaskedFormatter
+- uid: CG.Sequences.MaskedFormatter.Format(System.String,System.Object,System.IFormatProvider)
+  name: Format(String, Object, IFormatProvider)
+  href: api/CG.Sequences.MaskedFormatter.html#CG_Sequences_MaskedFormatter_Format_System_String_System_Object_System_IFormatProvider_
+  commentId: M:CG.Sequences.MaskedFormatter.Format(System.String,System.Object,System.IFormatProvider)
+  fullName: CG.Sequences.MaskedFormatter.Format(System.String, System.Object, System.IFormatProvider)
+  nameWithType: MaskedFormatter.Format(String, Object, IFormatProvider)
+- uid: CG.Sequences.MaskedFormatter.Format*
+  name: Format
+  href: api/CG.Sequences.MaskedFormatter.html#CG_Sequences_MaskedFormatter_Format_
+  commentId: Overload:CG.Sequences.MaskedFormatter.Format
+  isSpec: "True"
+  fullName: CG.Sequences.MaskedFormatter.Format
+  nameWithType: MaskedFormatter.Format
+- uid: CG.Sequences.MaskedFormatter.GetFormat(System.Type)
+  name: GetFormat(Type)
+  href: api/CG.Sequences.MaskedFormatter.html#CG_Sequences_MaskedFormatter_GetFormat_System_Type_
+  commentId: M:CG.Sequences.MaskedFormatter.GetFormat(System.Type)
+  fullName: CG.Sequences.MaskedFormatter.GetFormat(System.Type)
+  nameWithType: MaskedFormatter.GetFormat(Type)
+- uid: CG.Sequences.MaskedFormatter.GetFormat*
+  name: GetFormat
+  href: api/CG.Sequences.MaskedFormatter.html#CG_Sequences_MaskedFormatter_GetFormat_
+  commentId: Overload:CG.Sequences.MaskedFormatter.GetFormat
+  isSpec: "True"
+  fullName: CG.Sequences.MaskedFormatter.GetFormat
+  nameWithType: MaskedFormatter.GetFormat
+- uid: CG.Sequences.Models
+  name: CG.Sequences.Models
+  href: api/CG.Sequences.Models.html
+  commentId: N:CG.Sequences.Models
+  fullName: CG.Sequences.Models
+  nameWithType: CG.Sequences.Models
+- uid: CG.Sequences.Models.Sequence
+  name: Sequence
+  href: api/CG.Sequences.Models.Sequence.html
+  commentId: T:CG.Sequences.Models.Sequence
+  fullName: CG.Sequences.Models.Sequence
+  nameWithType: Sequence
+- uid: CG.Sequences.Models.Sequence.CreatedBy
+  name: CreatedBy
+  href: api/CG.Sequences.Models.Sequence.html#CG_Sequences_Models_Sequence_CreatedBy
+  commentId: P:CG.Sequences.Models.Sequence.CreatedBy
+  fullName: CG.Sequences.Models.Sequence.CreatedBy
+  nameWithType: Sequence.CreatedBy
+- uid: CG.Sequences.Models.Sequence.CreatedBy*
+  name: CreatedBy
+  href: api/CG.Sequences.Models.Sequence.html#CG_Sequences_Models_Sequence_CreatedBy_
+  commentId: Overload:CG.Sequences.Models.Sequence.CreatedBy
+  isSpec: "True"
+  fullName: CG.Sequences.Models.Sequence.CreatedBy
+  nameWithType: Sequence.CreatedBy
+- uid: CG.Sequences.Models.Sequence.CreatedDate
+  name: CreatedDate
+  href: api/CG.Sequences.Models.Sequence.html#CG_Sequences_Models_Sequence_CreatedDate
+  commentId: P:CG.Sequences.Models.Sequence.CreatedDate
+  fullName: CG.Sequences.Models.Sequence.CreatedDate
+  nameWithType: Sequence.CreatedDate
+- uid: CG.Sequences.Models.Sequence.CreatedDate*
+  name: CreatedDate
+  href: api/CG.Sequences.Models.Sequence.html#CG_Sequences_Models_Sequence_CreatedDate_
+  commentId: Overload:CG.Sequences.Models.Sequence.CreatedDate
+  isSpec: "True"
+  fullName: CG.Sequences.Models.Sequence.CreatedDate
+  nameWithType: Sequence.CreatedDate
+- uid: CG.Sequences.Models.Sequence.LastValue
+  name: LastValue
+  href: api/CG.Sequences.Models.Sequence.html#CG_Sequences_Models_Sequence_LastValue
+  commentId: P:CG.Sequences.Models.Sequence.LastValue
+  fullName: CG.Sequences.Models.Sequence.LastValue
+  nameWithType: Sequence.LastValue
+- uid: CG.Sequences.Models.Sequence.LastValue*
+  name: LastValue
+  href: api/CG.Sequences.Models.Sequence.html#CG_Sequences_Models_Sequence_LastValue_
+  commentId: Overload:CG.Sequences.Models.Sequence.LastValue
+  isSpec: "True"
+  fullName: CG.Sequences.Models.Sequence.LastValue
+  nameWithType: Sequence.LastValue
+- uid: CG.Sequences.Models.Sequence.Mask
+  name: Mask
+  href: api/CG.Sequences.Models.Sequence.html#CG_Sequences_Models_Sequence_Mask
+  commentId: P:CG.Sequences.Models.Sequence.Mask
+  fullName: CG.Sequences.Models.Sequence.Mask
+  nameWithType: Sequence.Mask
+- uid: CG.Sequences.Models.Sequence.Mask*
+  name: Mask
+  href: api/CG.Sequences.Models.Sequence.html#CG_Sequences_Models_Sequence_Mask_
+  commentId: Overload:CG.Sequences.Models.Sequence.Mask
+  isSpec: "True"
+  fullName: CG.Sequences.Models.Sequence.Mask
+  nameWithType: Sequence.Mask
+- uid: CG.Sequences.Models.Sequence.ThrowOnMaskOverflow
+  name: ThrowOnMaskOverflow
+  href: api/CG.Sequences.Models.Sequence.html#CG_Sequences_Models_Sequence_ThrowOnMaskOverflow
+  commentId: P:CG.Sequences.Models.Sequence.ThrowOnMaskOverflow
+  fullName: CG.Sequences.Models.Sequence.ThrowOnMaskOverflow
+  nameWithType: Sequence.ThrowOnMaskOverflow
+- uid: CG.Sequences.Models.Sequence.ThrowOnMaskOverflow*
+  name: ThrowOnMaskOverflow
+  href: api/CG.Sequences.Models.Sequence.html#CG_Sequences_Models_Sequence_ThrowOnMaskOverflow_
+  commentId: Overload:CG.Sequences.Models.Sequence.ThrowOnMaskOverflow
+  isSpec: "True"
+  fullName: CG.Sequences.Models.Sequence.ThrowOnMaskOverflow
+  nameWithType: Sequence.ThrowOnMaskOverflow
+- uid: CG.Sequences.Models.Sequence.ThrowOnOverflow
+  name: ThrowOnOverflow
+  href: api/CG.Sequences.Models.Sequence.html#CG_Sequences_Models_Sequence_ThrowOnOverflow
+  commentId: P:CG.Sequences.Models.Sequence.ThrowOnOverflow
+  fullName: CG.Sequences.Models.Sequence.ThrowOnOverflow
+  nameWithType: Sequence.ThrowOnOverflow
+- uid: CG.Sequences.Models.Sequence.ThrowOnOverflow*
+  name: ThrowOnOverflow
+  href: api/CG.Sequences.Models.Sequence.html#CG_Sequences_Models_Sequence_ThrowOnOverflow_
+  commentId: Overload:CG.Sequences.Models.Sequence.ThrowOnOverflow
+  isSpec: "True"
+  fullName: CG.Sequences.Models.Sequence.ThrowOnOverflow
+  nameWithType: Sequence.ThrowOnOverflow
+- uid: CG.Sequences.Models.Sequence.Title
+  name: Title
+  href: api/CG.Sequences.Models.Sequence.html#CG_Sequences_Models_Sequence_Title
+  commentId: P:CG.Sequences.Models.Sequence.Title
+  fullName: CG.Sequences.Models.Sequence.Title
+  nameWithType: Sequence.Title
+- uid: CG.Sequences.Models.Sequence.Title*
+  name: Title
+  href: api/CG.Sequences.Models.Sequence.html#CG_Sequences_Models_Sequence_Title_
+  commentId: Overload:CG.Sequences.Models.Sequence.Title
+  isSpec: "True"
+  fullName: CG.Sequences.Models.Sequence.Title
+  nameWithType: Sequence.Title
+- uid: CG.Sequences.Models.Sequence.UpdatedBy
+  name: UpdatedBy
+  href: api/CG.Sequences.Models.Sequence.html#CG_Sequences_Models_Sequence_UpdatedBy
+  commentId: P:CG.Sequences.Models.Sequence.UpdatedBy
+  fullName: CG.Sequences.Models.Sequence.UpdatedBy
+  nameWithType: Sequence.UpdatedBy
+- uid: CG.Sequences.Models.Sequence.UpdatedBy*
+  name: UpdatedBy
+  href: api/CG.Sequences.Models.Sequence.html#CG_Sequences_Models_Sequence_UpdatedBy_
+  commentId: Overload:CG.Sequences.Models.Sequence.UpdatedBy
+  isSpec: "True"
+  fullName: CG.Sequences.Models.Sequence.UpdatedBy
+  nameWithType: Sequence.UpdatedBy
+- uid: CG.Sequences.Models.Sequence.UpdatedDate
+  name: UpdatedDate
+  href: api/CG.Sequences.Models.Sequence.html#CG_Sequences_Models_Sequence_UpdatedDate
+  commentId: P:CG.Sequences.Models.Sequence.UpdatedDate
+  fullName: CG.Sequences.Models.Sequence.UpdatedDate
+  nameWithType: Sequence.UpdatedDate
+- uid: CG.Sequences.Models.Sequence.UpdatedDate*
+  name: UpdatedDate
+  href: api/CG.Sequences.Models.Sequence.html#CG_Sequences_Models_Sequence_UpdatedDate_
+  commentId: Overload:CG.Sequences.Models.Sequence.UpdatedDate
+  isSpec: "True"
+  fullName: CG.Sequences.Models.Sequence.UpdatedDate
+  nameWithType: Sequence.UpdatedDate
+- uid: CG.Sequences.Repositories
+  name: CG.Sequences.Repositories
+  href: api/CG.Sequences.Repositories.html
+  commentId: N:CG.Sequences.Repositories
+  fullName: CG.Sequences.Repositories
+  nameWithType: CG.Sequences.Repositories
+- uid: CG.Sequences.Repositories.ISequenceRepository`2
+  name: ISequenceRepository<TModel, TKey>
+  href: api/CG.Sequences.Repositories.ISequenceRepository-2.html
+  commentId: T:CG.Sequences.Repositories.ISequenceRepository`2
+  name.vb: ISequenceRepository(Of TModel, TKey)
+  fullName: CG.Sequences.Repositories.ISequenceRepository<TModel, TKey>
+  fullName.vb: CG.Sequences.Repositories.ISequenceRepository(Of TModel, TKey)
+  nameWithType: ISequenceRepository<TModel, TKey>
+  nameWithType.vb: ISequenceRepository(Of TModel, TKey)
+- uid: CG.Sequences.Repositories.SequenceRepositoryBase`3
+  name: SequenceRepositoryBase<TOptions, TModel, TKey>
+  href: api/CG.Sequences.Repositories.SequenceRepositoryBase-3.html
+  commentId: T:CG.Sequences.Repositories.SequenceRepositoryBase`3
+  name.vb: SequenceRepositoryBase(Of TOptions, TModel, TKey)
+  fullName: CG.Sequences.Repositories.SequenceRepositoryBase<TOptions, TModel, TKey>
+  fullName.vb: CG.Sequences.Repositories.SequenceRepositoryBase(Of TOptions, TModel, TKey)
+  nameWithType: SequenceRepositoryBase<TOptions, TModel, TKey>
+  nameWithType.vb: SequenceRepositoryBase(Of TOptions, TModel, TKey)
+- uid: CG.Sequences.Repositories.SequenceRepositoryBase`3.#ctor(`0)
+  name: SequenceRepositoryBase(TOptions)
+  href: api/CG.Sequences.Repositories.SequenceRepositoryBase-3.html#CG_Sequences_Repositories_SequenceRepositoryBase_3__ctor__0_
+  commentId: M:CG.Sequences.Repositories.SequenceRepositoryBase`3.#ctor(`0)
+  fullName: CG.Sequences.Repositories.SequenceRepositoryBase<TOptions, TModel, TKey>.SequenceRepositoryBase(TOptions)
+  fullName.vb: CG.Sequences.Repositories.SequenceRepositoryBase(Of TOptions, TModel, TKey).SequenceRepositoryBase(TOptions)
+  nameWithType: SequenceRepositoryBase<TOptions, TModel, TKey>.SequenceRepositoryBase(TOptions)
+  nameWithType.vb: SequenceRepositoryBase(Of TOptions, TModel, TKey).SequenceRepositoryBase(TOptions)
+- uid: CG.Sequences.Repositories.SequenceRepositoryBase`3.#ctor*
+  name: SequenceRepositoryBase
+  href: api/CG.Sequences.Repositories.SequenceRepositoryBase-3.html#CG_Sequences_Repositories_SequenceRepositoryBase_3__ctor_
+  commentId: Overload:CG.Sequences.Repositories.SequenceRepositoryBase`3.#ctor
+  isSpec: "True"
+  fullName: CG.Sequences.Repositories.SequenceRepositoryBase<TOptions, TModel, TKey>.SequenceRepositoryBase
+  fullName.vb: CG.Sequences.Repositories.SequenceRepositoryBase(Of TOptions, TModel, TKey).SequenceRepositoryBase
+  nameWithType: SequenceRepositoryBase<TOptions, TModel, TKey>.SequenceRepositoryBase
+  nameWithType.vb: SequenceRepositoryBase(Of TOptions, TModel, TKey).SequenceRepositoryBase
+- uid: CG.Sequences.SequenceException
+  name: SequenceException
+  href: api/CG.Sequences.SequenceException.html
+  commentId: T:CG.Sequences.SequenceException
+  fullName: CG.Sequences.SequenceException
+  nameWithType: SequenceException
+- uid: CG.Sequences.SequenceException.#ctor
+  name: SequenceException()
+  href: api/CG.Sequences.SequenceException.html#CG_Sequences_SequenceException__ctor
+  commentId: M:CG.Sequences.SequenceException.#ctor
+  fullName: CG.Sequences.SequenceException.SequenceException()
+  nameWithType: SequenceException.SequenceException()
+- uid: CG.Sequences.SequenceException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: SequenceException(SerializationInfo, StreamingContext)
+  href: api/CG.Sequences.SequenceException.html#CG_Sequences_SequenceException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:CG.Sequences.SequenceException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: CG.Sequences.SequenceException.SequenceException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: SequenceException.SequenceException(SerializationInfo, StreamingContext)
+- uid: CG.Sequences.SequenceException.#ctor(System.String)
+  name: SequenceException(String)
+  href: api/CG.Sequences.SequenceException.html#CG_Sequences_SequenceException__ctor_System_String_
+  commentId: M:CG.Sequences.SequenceException.#ctor(System.String)
+  fullName: CG.Sequences.SequenceException.SequenceException(System.String)
+  nameWithType: SequenceException.SequenceException(String)
+- uid: CG.Sequences.SequenceException.#ctor(System.String,System.Exception)
+  name: SequenceException(String, Exception)
+  href: api/CG.Sequences.SequenceException.html#CG_Sequences_SequenceException__ctor_System_String_System_Exception_
+  commentId: M:CG.Sequences.SequenceException.#ctor(System.String,System.Exception)
+  fullName: CG.Sequences.SequenceException.SequenceException(System.String, System.Exception)
+  nameWithType: SequenceException.SequenceException(String, Exception)
+- uid: CG.Sequences.SequenceException.#ctor*
+  name: SequenceException
+  href: api/CG.Sequences.SequenceException.html#CG_Sequences_SequenceException__ctor_
+  commentId: Overload:CG.Sequences.SequenceException.#ctor
+  isSpec: "True"
+  fullName: CG.Sequences.SequenceException.SequenceException
+  nameWithType: SequenceException.SequenceException
+- uid: CG.Sequences.SequenceServiceCollectionExtensions
+  name: SequenceServiceCollectionExtensions
+  href: api/CG.Sequences.SequenceServiceCollectionExtensions.html
+  commentId: T:CG.Sequences.SequenceServiceCollectionExtensions
+  fullName: CG.Sequences.SequenceServiceCollectionExtensions
+  nameWithType: SequenceServiceCollectionExtensions
+- uid: CG.Sequences.SequenceServiceCollectionExtensions.AddSequenceStores(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  name: AddSequenceStores(IServiceCollection, IConfiguration, ServiceLifetime)
+  href: api/CG.Sequences.SequenceServiceCollectionExtensions.html#CG_Sequences_SequenceServiceCollectionExtensions_AddSequenceStores_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_DependencyInjection_ServiceLifetime_
+  commentId: M:CG.Sequences.SequenceServiceCollectionExtensions.AddSequenceStores(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  fullName: CG.Sequences.SequenceServiceCollectionExtensions.AddSequenceStores(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  nameWithType: SequenceServiceCollectionExtensions.AddSequenceStores(IServiceCollection, IConfiguration, ServiceLifetime)
+- uid: CG.Sequences.SequenceServiceCollectionExtensions.AddSequenceStores*
+  name: AddSequenceStores
+  href: api/CG.Sequences.SequenceServiceCollectionExtensions.html#CG_Sequences_SequenceServiceCollectionExtensions_AddSequenceStores_
+  commentId: Overload:CG.Sequences.SequenceServiceCollectionExtensions.AddSequenceStores
+  isSpec: "True"
+  fullName: CG.Sequences.SequenceServiceCollectionExtensions.AddSequenceStores
+  nameWithType: SequenceServiceCollectionExtensions.AddSequenceStores
+- uid: CG.Sequences.SequenceServiceCollectionExtensions.AddSequenceStores``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  name: AddSequenceStores<TModel, TKey>(IServiceCollection, IConfiguration)
+  href: api/CG.Sequences.SequenceServiceCollectionExtensions.html#CG_Sequences_SequenceServiceCollectionExtensions_AddSequenceStores__2_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_
+  commentId: M:CG.Sequences.SequenceServiceCollectionExtensions.AddSequenceStores``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  name.vb: AddSequenceStores(Of TModel, TKey)(IServiceCollection, IConfiguration)
+  fullName: CG.Sequences.SequenceServiceCollectionExtensions.AddSequenceStores<TModel, TKey>(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)
+  fullName.vb: CG.Sequences.SequenceServiceCollectionExtensions.AddSequenceStores(Of TModel, TKey)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)
+  nameWithType: SequenceServiceCollectionExtensions.AddSequenceStores<TModel, TKey>(IServiceCollection, IConfiguration)
+  nameWithType.vb: SequenceServiceCollectionExtensions.AddSequenceStores(Of TModel, TKey)(IServiceCollection, IConfiguration)
+- uid: CG.Sequences.Stores
+  name: CG.Sequences.Stores
+  href: api/CG.Sequences.Stores.html
+  commentId: N:CG.Sequences.Stores
+  fullName: CG.Sequences.Stores
+  nameWithType: CG.Sequences.Stores
+- uid: CG.Sequences.Stores.ISequenceStore`2
+  name: ISequenceStore<TModel, TKey>
+  href: api/CG.Sequences.Stores.ISequenceStore-2.html
+  commentId: T:CG.Sequences.Stores.ISequenceStore`2
+  name.vb: ISequenceStore(Of TModel, TKey)
+  fullName: CG.Sequences.Stores.ISequenceStore<TModel, TKey>
+  fullName.vb: CG.Sequences.Stores.ISequenceStore(Of TModel, TKey)
+  nameWithType: ISequenceStore<TModel, TKey>
+  nameWithType.vb: ISequenceStore(Of TModel, TKey)
+- uid: CG.Sequences.Stores.ISequenceStore`2.NextAsync(`0,System.Int32,System.Threading.CancellationToken)
+  name: NextAsync(TModel, Int32, CancellationToken)
+  href: api/CG.Sequences.Stores.ISequenceStore-2.html#CG_Sequences_Stores_ISequenceStore_2_NextAsync__0_System_Int32_System_Threading_CancellationToken_
+  commentId: M:CG.Sequences.Stores.ISequenceStore`2.NextAsync(`0,System.Int32,System.Threading.CancellationToken)
+  fullName: CG.Sequences.Stores.ISequenceStore<TModel, TKey>.NextAsync(TModel, System.Int32, System.Threading.CancellationToken)
+  fullName.vb: CG.Sequences.Stores.ISequenceStore(Of TModel, TKey).NextAsync(TModel, System.Int32, System.Threading.CancellationToken)
+  nameWithType: ISequenceStore<TModel, TKey>.NextAsync(TModel, Int32, CancellationToken)
+  nameWithType.vb: ISequenceStore(Of TModel, TKey).NextAsync(TModel, Int32, CancellationToken)
+- uid: CG.Sequences.Stores.ISequenceStore`2.NextAsync*
+  name: NextAsync
+  href: api/CG.Sequences.Stores.ISequenceStore-2.html#CG_Sequences_Stores_ISequenceStore_2_NextAsync_
+  commentId: Overload:CG.Sequences.Stores.ISequenceStore`2.NextAsync
+  isSpec: "True"
+  fullName: CG.Sequences.Stores.ISequenceStore<TModel, TKey>.NextAsync
+  fullName.vb: CG.Sequences.Stores.ISequenceStore(Of TModel, TKey).NextAsync
+  nameWithType: ISequenceStore<TModel, TKey>.NextAsync
+  nameWithType.vb: ISequenceStore(Of TModel, TKey).NextAsync
+- uid: CG.Sequences.Stores.ISequenceStore`2.ResetAsync(`0,System.Threading.CancellationToken)
+  name: ResetAsync(TModel, CancellationToken)
+  href: api/CG.Sequences.Stores.ISequenceStore-2.html#CG_Sequences_Stores_ISequenceStore_2_ResetAsync__0_System_Threading_CancellationToken_
+  commentId: M:CG.Sequences.Stores.ISequenceStore`2.ResetAsync(`0,System.Threading.CancellationToken)
+  fullName: CG.Sequences.Stores.ISequenceStore<TModel, TKey>.ResetAsync(TModel, System.Threading.CancellationToken)
+  fullName.vb: CG.Sequences.Stores.ISequenceStore(Of TModel, TKey).ResetAsync(TModel, System.Threading.CancellationToken)
+  nameWithType: ISequenceStore<TModel, TKey>.ResetAsync(TModel, CancellationToken)
+  nameWithType.vb: ISequenceStore(Of TModel, TKey).ResetAsync(TModel, CancellationToken)
+- uid: CG.Sequences.Stores.ISequenceStore`2.ResetAsync*
+  name: ResetAsync
+  href: api/CG.Sequences.Stores.ISequenceStore-2.html#CG_Sequences_Stores_ISequenceStore_2_ResetAsync_
+  commentId: Overload:CG.Sequences.Stores.ISequenceStore`2.ResetAsync
+  isSpec: "True"
+  fullName: CG.Sequences.Stores.ISequenceStore<TModel, TKey>.ResetAsync
+  fullName.vb: CG.Sequences.Stores.ISequenceStore(Of TModel, TKey).ResetAsync
+  nameWithType: ISequenceStore<TModel, TKey>.ResetAsync
+  nameWithType.vb: ISequenceStore(Of TModel, TKey).ResetAsync
+- uid: CG.Sequences.Stores.Options
+  name: CG.Sequences.Stores.Options
+  href: api/CG.Sequences.Stores.Options.html
+  commentId: N:CG.Sequences.Stores.Options
+  fullName: CG.Sequences.Stores.Options
+  nameWithType: CG.Sequences.Stores.Options
+- uid: CG.Sequences.Stores.Options.SequenceStoreOptions
+  name: SequenceStoreOptions
+  href: api/CG.Sequences.Stores.Options.SequenceStoreOptions.html
+  commentId: T:CG.Sequences.Stores.Options.SequenceStoreOptions
+  fullName: CG.Sequences.Stores.Options.SequenceStoreOptions
+  nameWithType: SequenceStoreOptions
+- uid: CG.Sequences.Stores.SequenceStore`2
+  name: SequenceStore<TModel, TKey>
+  href: api/CG.Sequences.Stores.SequenceStore-2.html
+  commentId: T:CG.Sequences.Stores.SequenceStore`2
+  name.vb: SequenceStore(Of TModel, TKey)
+  fullName: CG.Sequences.Stores.SequenceStore<TModel, TKey>
+  fullName.vb: CG.Sequences.Stores.SequenceStore(Of TModel, TKey)
+  nameWithType: SequenceStore<TModel, TKey>
+  nameWithType.vb: SequenceStore(Of TModel, TKey)
+- uid: CG.Sequences.Stores.SequenceStore`2.#ctor(CG.Sequences.Repositories.ISequenceRepository{`0,`1})
+  name: SequenceStore(ISequenceRepository<TModel, TKey>)
+  href: api/CG.Sequences.Stores.SequenceStore-2.html#CG_Sequences_Stores_SequenceStore_2__ctor_CG_Sequences_Repositories_ISequenceRepository__0__1__
+  commentId: M:CG.Sequences.Stores.SequenceStore`2.#ctor(CG.Sequences.Repositories.ISequenceRepository{`0,`1})
+  name.vb: SequenceStore(ISequenceRepository(Of TModel, TKey))
+  fullName: CG.Sequences.Stores.SequenceStore<TModel, TKey>.SequenceStore(CG.Sequences.Repositories.ISequenceRepository<TModel, TKey>)
+  fullName.vb: CG.Sequences.Stores.SequenceStore(Of TModel, TKey).SequenceStore(CG.Sequences.Repositories.ISequenceRepository(Of TModel, TKey))
+  nameWithType: SequenceStore<TModel, TKey>.SequenceStore(ISequenceRepository<TModel, TKey>)
+  nameWithType.vb: SequenceStore(Of TModel, TKey).SequenceStore(ISequenceRepository(Of TModel, TKey))
+- uid: CG.Sequences.Stores.SequenceStore`2.#ctor*
+  name: SequenceStore
+  href: api/CG.Sequences.Stores.SequenceStore-2.html#CG_Sequences_Stores_SequenceStore_2__ctor_
+  commentId: Overload:CG.Sequences.Stores.SequenceStore`2.#ctor
+  isSpec: "True"
+  fullName: CG.Sequences.Stores.SequenceStore<TModel, TKey>.SequenceStore
+  fullName.vb: CG.Sequences.Stores.SequenceStore(Of TModel, TKey).SequenceStore
+  nameWithType: SequenceStore<TModel, TKey>.SequenceStore
+  nameWithType.vb: SequenceStore(Of TModel, TKey).SequenceStore
+- uid: CG.Sequences.Stores.SequenceStore`2.AddAsync(`0,System.Threading.CancellationToken)
+  name: AddAsync(TModel, CancellationToken)
+  href: api/CG.Sequences.Stores.SequenceStore-2.html#CG_Sequences_Stores_SequenceStore_2_AddAsync__0_System_Threading_CancellationToken_
+  commentId: M:CG.Sequences.Stores.SequenceStore`2.AddAsync(`0,System.Threading.CancellationToken)
+  fullName: CG.Sequences.Stores.SequenceStore<TModel, TKey>.AddAsync(TModel, System.Threading.CancellationToken)
+  fullName.vb: CG.Sequences.Stores.SequenceStore(Of TModel, TKey).AddAsync(TModel, System.Threading.CancellationToken)
+  nameWithType: SequenceStore<TModel, TKey>.AddAsync(TModel, CancellationToken)
+  nameWithType.vb: SequenceStore(Of TModel, TKey).AddAsync(TModel, CancellationToken)
+- uid: CG.Sequences.Stores.SequenceStore`2.AddAsync*
+  name: AddAsync
+  href: api/CG.Sequences.Stores.SequenceStore-2.html#CG_Sequences_Stores_SequenceStore_2_AddAsync_
+  commentId: Overload:CG.Sequences.Stores.SequenceStore`2.AddAsync
+  isSpec: "True"
+  fullName: CG.Sequences.Stores.SequenceStore<TModel, TKey>.AddAsync
+  fullName.vb: CG.Sequences.Stores.SequenceStore(Of TModel, TKey).AddAsync
+  nameWithType: SequenceStore<TModel, TKey>.AddAsync
+  nameWithType.vb: SequenceStore(Of TModel, TKey).AddAsync
+- uid: CG.Sequences.Stores.SequenceStore`2.NextAsync(`0,System.Int32,System.Threading.CancellationToken)
+  name: NextAsync(TModel, Int32, CancellationToken)
+  href: api/CG.Sequences.Stores.SequenceStore-2.html#CG_Sequences_Stores_SequenceStore_2_NextAsync__0_System_Int32_System_Threading_CancellationToken_
+  commentId: M:CG.Sequences.Stores.SequenceStore`2.NextAsync(`0,System.Int32,System.Threading.CancellationToken)
+  fullName: CG.Sequences.Stores.SequenceStore<TModel, TKey>.NextAsync(TModel, System.Int32, System.Threading.CancellationToken)
+  fullName.vb: CG.Sequences.Stores.SequenceStore(Of TModel, TKey).NextAsync(TModel, System.Int32, System.Threading.CancellationToken)
+  nameWithType: SequenceStore<TModel, TKey>.NextAsync(TModel, Int32, CancellationToken)
+  nameWithType.vb: SequenceStore(Of TModel, TKey).NextAsync(TModel, Int32, CancellationToken)
+- uid: CG.Sequences.Stores.SequenceStore`2.NextAsync*
+  name: NextAsync
+  href: api/CG.Sequences.Stores.SequenceStore-2.html#CG_Sequences_Stores_SequenceStore_2_NextAsync_
+  commentId: Overload:CG.Sequences.Stores.SequenceStore`2.NextAsync
+  isSpec: "True"
+  fullName: CG.Sequences.Stores.SequenceStore<TModel, TKey>.NextAsync
+  fullName.vb: CG.Sequences.Stores.SequenceStore(Of TModel, TKey).NextAsync
+  nameWithType: SequenceStore<TModel, TKey>.NextAsync
+  nameWithType.vb: SequenceStore(Of TModel, TKey).NextAsync
+- uid: CG.Sequences.Stores.SequenceStore`2.ResetAsync(`0,System.Threading.CancellationToken)
+  name: ResetAsync(TModel, CancellationToken)
+  href: api/CG.Sequences.Stores.SequenceStore-2.html#CG_Sequences_Stores_SequenceStore_2_ResetAsync__0_System_Threading_CancellationToken_
+  commentId: M:CG.Sequences.Stores.SequenceStore`2.ResetAsync(`0,System.Threading.CancellationToken)
+  fullName: CG.Sequences.Stores.SequenceStore<TModel, TKey>.ResetAsync(TModel, System.Threading.CancellationToken)
+  fullName.vb: CG.Sequences.Stores.SequenceStore(Of TModel, TKey).ResetAsync(TModel, System.Threading.CancellationToken)
+  nameWithType: SequenceStore<TModel, TKey>.ResetAsync(TModel, CancellationToken)
+  nameWithType.vb: SequenceStore(Of TModel, TKey).ResetAsync(TModel, CancellationToken)
+- uid: CG.Sequences.Stores.SequenceStore`2.ResetAsync*
+  name: ResetAsync
+  href: api/CG.Sequences.Stores.SequenceStore-2.html#CG_Sequences_Stores_SequenceStore_2_ResetAsync_
+  commentId: Overload:CG.Sequences.Stores.SequenceStore`2.ResetAsync
+  isSpec: "True"
+  fullName: CG.Sequences.Stores.SequenceStore<TModel, TKey>.ResetAsync
+  fullName.vb: CG.Sequences.Stores.SequenceStore(Of TModel, TKey).ResetAsync
+  nameWithType: SequenceStore<TModel, TKey>.ResetAsync
+  nameWithType.vb: SequenceStore(Of TModel, TKey).ResetAsync
+- uid: CG.Sequences.Stores.SequenceStore`2.UpdateAsync(`0,System.Threading.CancellationToken)
+  name: UpdateAsync(TModel, CancellationToken)
+  href: api/CG.Sequences.Stores.SequenceStore-2.html#CG_Sequences_Stores_SequenceStore_2_UpdateAsync__0_System_Threading_CancellationToken_
+  commentId: M:CG.Sequences.Stores.SequenceStore`2.UpdateAsync(`0,System.Threading.CancellationToken)
+  fullName: CG.Sequences.Stores.SequenceStore<TModel, TKey>.UpdateAsync(TModel, System.Threading.CancellationToken)
+  fullName.vb: CG.Sequences.Stores.SequenceStore(Of TModel, TKey).UpdateAsync(TModel, System.Threading.CancellationToken)
+  nameWithType: SequenceStore<TModel, TKey>.UpdateAsync(TModel, CancellationToken)
+  nameWithType.vb: SequenceStore(Of TModel, TKey).UpdateAsync(TModel, CancellationToken)
+- uid: CG.Sequences.Stores.SequenceStore`2.UpdateAsync*
+  name: UpdateAsync
+  href: api/CG.Sequences.Stores.SequenceStore-2.html#CG_Sequences_Stores_SequenceStore_2_UpdateAsync_
+  commentId: Overload:CG.Sequences.Stores.SequenceStore`2.UpdateAsync
+  isSpec: "True"
+  fullName: CG.Sequences.Stores.SequenceStore<TModel, TKey>.UpdateAsync
+  fullName.vb: CG.Sequences.Stores.SequenceStore(Of TModel, TKey).UpdateAsync
+  nameWithType: SequenceStore<TModel, TKey>.UpdateAsync
+  nameWithType.vb: SequenceStore(Of TModel, TKey).UpdateAsync

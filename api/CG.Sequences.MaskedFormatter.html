@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MaskedFormatter
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MaskedFormatter
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CG.Sequences.MaskedFormatter">
+  
+  
+  <h1 id="CG_Sequences_MaskedFormatter" data-uid="CG.Sequences.MaskedFormatter" class="text-break">Class MaskedFormatter
+  </h1>
+  <div class="markdown level0 summary"><p>This class is an implementation of <a class="xref" href="CG.Sequences.IMaskedFormatter.html">IMaskedFormatter</a> that
+formats a given value using a mask comprised of literal and token symbols.
+Each token in the mask is used to format the number, according to the
+rules for that token. Literal symbols are copied verbatum to the output.
+Token symbols can also be escaped by leading the symbol with a '&amp;apos;.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">MaskedFormatter</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="CG.Sequences.IMaskedFormatter.html">IMaskedFormatter</a></div>
+    <div><span class="xref">System.IFormatProvider</span></div>
+    <div><span class="xref">System.ICustomFormatter</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Sequences.html">CG.Sequences</a></h6>
+  <h6><strong>Assembly</strong>: CG.Sequences.dll</h6>
+  <h5 id="CG_Sequences_MaskedFormatter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class MaskedFormatter : IMaskedFormatter, IFormatProvider, ICustomFormatter</code></pre>
+  </div>
+  <h5 id="CG_Sequences_MaskedFormatter_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The mask may contain any combination of tokens and literals, to any
+length desired. If the value cannot be expressed with a given mask then
+a <span class="xref">System.FormatException</span> exception is thrown. So, make sure the
+mask you use have enough tokens in it to handle the range of values
+you'll be trying to format.</p>
+<p>
+The mask part of the format string MUST start and end with the &apos;$&apos; symbol 
+and may contain the following conversion tokens: 
+<p><strong>Token-Description</strong></p><ul><li>&apos;D&apos;This token denotes a decimal placeholder, which means this
+digit will be formatted as a decimal number (0 through 9).</li><li>&apos;B&apos;This token denotes a binary placeholder, which means this
+digit will be formatted as a binary number (0 through 1).</li><li>&apos;O&apos;This token denotes an octal placeholder, which means this
+digit will be formatted as a octal number (0 through 7).</li><li>&apos;H&apos;This token denotes a hex placeholder, which means this
+digit will be formatted as a hex number (0 through F).</li><li>&apos;Z&apos;This token denotes a base36 placeholder, which means this
+digit will be formatted as a printable character (0 through 9, a through Z).
+</li></ul>
+<p>
+Literal symbols may be any legal .NET character but token symbols used as
+a literal MUST be escaped with a leading &apos;\&apos; character.
+</div>
+  <h5 id="CG_Sequences_MaskedFormatter_examples"><strong>Examples</strong></h5>
+  <p>This example shows how to use the <a class="xref" href="CG.Sequences.MaskedFormatter.html">MaskedFormatter</a> class to
+format a numeric value into a custom string.</p>
+<pre><code>class TestClass
+{
+    static void Main()
+    {
+        var result = String.Format(new MaskedFormatter(), &quot;{0:$HHHH$}&quot;, 101);
+        Console.WriteLine(result);
+        // Outputs the value: 0065
+        // (hex conversion with no literals)
+
+        result = String.Format(new MaskedFormatter(), &quot;{0:$OOOO$}&quot;, 101);
+        Console.WriteLine(result);
+        // Outputs the value: 0145
+        // (octal conversion with no literals)
+
+        result = String.Format(new MaskedFormatter(), &quot;{0:$HBOD$}&quot;, 201);
+        Console.WriteLine(result);
+        // Outputs the value: 1041
+        // (mixed base conversion with no literals)
+
+        result = String.Format(new MaskedFormatter(), &quot;{0:$H_B-O%D=$}&quot;, 201);
+        Console.WriteLine(result);
+        // Outputs the value: 1_0-4%1=
+        // (mixed base conversion with embedded literals)
+    }
+}</code></pre>
+
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="CG_Sequences_MaskedFormatter__ctor_" data-uid="CG.Sequences.MaskedFormatter.#ctor*"></a>
+  <h4 id="CG_Sequences_MaskedFormatter__ctor_System_Boolean_" data-uid="CG.Sequences.MaskedFormatter.#ctor(System.Boolean)">MaskedFormatter(Boolean)</h4>
+  <div class="markdown level1 summary"><p>This constructor creates a new instance of the <a class="xref" href="CG.Sequences.MaskedFormatter.html">MaskedFormatter</a>
+class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MaskedFormatter(bool throwOnMaskOverflow = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">throwOnMaskOverflow</span></td>
+        <td><p>True if the formatter should throw
+an exception whenever the value exceeds the number of non-literal
+digits in the mask. Empty masks are ignored for this purpose.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="CG_Sequences_MaskedFormatter_Format_" data-uid="CG.Sequences.MaskedFormatter.Format*"></a>
+  <h4 id="CG_Sequences_MaskedFormatter_Format_System_String_System_Object_System_IFormatProvider_" data-uid="CG.Sequences.MaskedFormatter.Format(System.String,System.Object,System.IFormatProvider)">Format(String, Object, IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>This method converts the value of a specified object to an equivalent
+string representation using specified format and culture-specific
+formatting information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Format(string format, object arg, IFormatProvider formatProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>A format string containing formatting specifications.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">arg</span></td>
+        <td><p>An object to format.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IFormatProvider</span></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td><p>An object that supplies format information
+about the current instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The string representation of the value of arg, formatted
+as specified by format and formatProvider.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Sequences_MaskedFormatter_GetFormat_" data-uid="CG.Sequences.MaskedFormatter.GetFormat*"></a>
+  <h4 id="CG_Sequences_MaskedFormatter_GetFormat_System_Type_" data-uid="CG.Sequences.MaskedFormatter.GetFormat(System.Type)">GetFormat(Type)</h4>
+  <div class="markdown level1 summary"><p>This method returns an object that provides formatting services for
+the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object GetFormat(Type formatType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">formatType</span></td>
+        <td><p>An object that specifies the type of format
+object to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>An instance of the object specified by formatType, if the
+<span class="xref">System.IFormatProvider</span> implementation can supply that
+type of object; otherwise, null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="CG.Sequences.IMaskedFormatter.html">IMaskedFormatter</a>
+  </div>
+  <div>
+      <span class="xref">System.IFormatProvider</span>
+  </div>
+  <div>
+      <span class="xref">System.ICustomFormatter</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
